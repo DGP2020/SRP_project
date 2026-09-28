@@ -1,0 +1,134 @@
+{
+  "target": "Water out put (litre)",
+  "features": [
+    "Month",
+    "Day",
+    "Solar Hours",
+    "Tevp",
+    "Thot",
+    "Tcold",
+    "Th,TEC",
+    "Solar Radiation, I\n(W/m2)",
+    "Ambient Temperature, Ta (oC)",
+    "Humidity, RH\n(%)",
+    "Wind Speed (m/s)",
+    "Absolute pressure \n(mm of Hg)",
+    "Dew point Temperature (oC)",
+    "doy_sin",
+    "doy_cos"
+  ],
+  "feature_ranges": {
+    "Month": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN
+    },
+    "Day": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN
+    },
+    "Solar Hours": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN
+    },
+    "Tevp": {
+      "min": 21.0,
+      "max": 28.0,
+      "mean": 25.317397439247454
+    },
+    "Thot": {
+      "min": 53.0,
+      "max": 88.0,
+      "mean": 84.69764828847661
+    },
+    "Tcold": {
+      "min": 25.0,
+      "max": 32.0,
+      "mean": 28.342461458061145
+    },
+    "Th,TEC": {
+      "min": 54.0,
+      "max": 65.0,
+      "mean": 61.05735563104259
+    },
+    "Solar Radiation, I\n(W/m2)": {
+      "min": 61.5,
+      "max": 9438.9,
+      "mean": 543.4299456493337
+    },
+    "Ambient Temperature, Ta (oC)": {
+      "min": 19.1,
+      "max": 60.7,
+      "mean": 32.43485131957146
+    },
+    "Humidity, RH\n(%)": {
+      "min": 37.0,
+      "max": 93.5,
+      "mean": 55.56445779984321
+    },
+    "Wind Speed (m/s)": {
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 0.9734481316958453
+    },
+    "Absolute pressure \n(mm of Hg)": {
+      "min": 62.0,
+      "max": 763.0,
+      "mean": 758.3958557616932
+    },
+    "Dew point Temperature (oC)": {
+      "min": 6.6,
+      "max": 51.43,
+      "mean": 21.970130284818396
+    },
+    "doy_sin": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN
+    },
+    "doy_cos": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN
+    }
+  },
+  "best_params": {
+    "n_estimators": 800,
+    "max_depth": 5,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 1,
+    "reg_lambda": 1
+  },
+  "best_iteration": 799,
+  "test_metrics": {
+    "MAE": {
+      "Linear Regression": 0.0766,
+      "XGBoost": 0.0089
+    },
+    "RMSE": {
+      "Linear Regression": 0.1555,
+      "XGBoost": 0.0151
+    },
+    "R2": {
+      "Linear Regression": 0.3493,
+      "XGBoost": 0.9939
+    }
+  },
+  "feature_importance": {
+    "Solar Radiation, I\n(W/m2)": 42.21870888089055,
+    "Absolute pressure \n(mm of Hg)": 24.81340115555503,
+    "Humidity, RH\n(%)": 12.179246910810651,
+    "Dew point Temperature (oC)": 5.916998280110283,
+    "Wind Speed (m/s)": 5.4092970486925,
+    "Ambient Temperature, Ta (oC)": 2.4830630518695593,
+    "Th,TEC": 2.1294380746910164,
+    "Tcold": 1.8811581904417567,
+    "Tevp": 1.6115613907184507,
+    "Thot": 1.3571270162202
+  },
+  "rows_used": 19135
+}
