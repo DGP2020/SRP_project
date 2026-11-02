@@ -1,4 +1,4 @@
-```markdown
+
 # AWG Digital Twin: Phase 1
 
 Data-driven prototype that predicts water output (litres) of an Atmospheric Water Generator from environmental and operating parameters.
@@ -30,4 +30,4 @@ Trained model (`awg_xgb_model.json`), metrics table, feature importance chart, p
 
 ## Phase 2 (Planned)
 Hybrid digital twin: thermodynamic condensation model, heat-transfer calculations, dew-point estimation, and XGBoost error correction for "what-if" simulation.
-```
+
